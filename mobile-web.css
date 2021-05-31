@@ -1,0 +1,111 @@
+.m-width{
+max-width: 320px;
+margin: auto;
+}
+img{
+  max-width: 100%o;
+}
+
+.menu-bar:{
+
+}
+
+.menu{}
+
+.menu ul{
+  list-style: none;
+  text-align: center;
+  margin-bottom:0 ;
+  padding-left: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: #483D8B;
+  transition: .4s;
+}
+
+.menu ul li a:hover{
+  color: red;
+}
+
+.header{
+  background:url(banner.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 0px 0px;
+  position: relative;
+  z-index: 99;
+  height: 300px;
+  width: auto;
+}
+
+.header-text {
+text-align: center;
+margin-top: 50px;
+}
+
+
+.header-text h1{
+  color: #F08080;
+  align-items: center;
+}
+.header-text p {
+  color: #fff ;
+  width: 80%;
+  margin: auto;
+}
+
+.header::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(1, 1, 1, .5);
+  z-index: -1;
+}
+
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color:blue;
+  margin: auto;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 50% ;
+  text-align: center;
+  animation: ease-out box 2s infinite;
+
+}
+.box h1{
+  line-height: 100px;
+  color: pink;
+  font-size: 20px;
+  animation: ease-in-out boxh 1s infinite;
+}
+
+@keyframes boxh{
+  0%{
+    font-size: 20px;
+    color: red;
+    opacity: 1;
+  }
+  50%{
+    font-size: 30px;
+    color: red;
+    opacity: 1;
+  }
+  100%{
+    font-size: 40px;
+    opacity: 0;
+  }
+}
+
+@keyframes box{
